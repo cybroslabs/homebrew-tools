@@ -2,7 +2,7 @@
 cask "ouroctl" do
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.9.15"
+  version "0.9.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,27 +12,27 @@ cask "ouroctl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/homebrew-tools-v0.9.15/homebrew-tools_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.16/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "a62382a0b0577497fb17cce98c1b2a3c0d54e52ce03b581344392214cd4a198d"
+      sha256 "d827a8d9d349496624be5cd0b17b0b0768bedeafd688bf2755cd04877b0f5023"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/homebrew-tools-v0.9.15/homebrew-tools_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.16/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "d230049d6633d7c04da2f5718c39353cf0a29967f65ac2376008708ad64c481c"
+      sha256 "4155ed2fe5caa67f551e20032b73aa18bf27d32c547e0a67dd2696fa5841f52c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/homebrew-tools-v0.9.15/homebrew-tools_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.16/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "96233d3885b0bf5e36be3c751bb9359ebdece2e7465dd75640129ac3eb1a9f84"
+      sha256 "43e293c22558a32207667848c9327687944d3ad6aa799767b7c82f8cb3e84af9"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/homebrew-tools-v0.9.15/homebrew-tools_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.16/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "c049acc11132e0587eb0a34a0c63dfbc61ac3ed3bf8b6c3335a3d09e77f47e59"
+      sha256 "6d59aeba465cef822c173a0b43a0928084f2b3bfe8ab7519e3c966f942b0b76b"
     end
   end
 
