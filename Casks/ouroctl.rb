@@ -2,7 +2,7 @@
 cask "ouroctl" do
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.9.13"
+  version "0.9.14"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,27 +12,33 @@ cask "ouroctl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/ouroctl/releases/download/v0.9.13/ouroctl_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/ouroctl/releases/download/homebrew-tools-v0.9.14/homebrew-tools_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/ouroctl"
-      sha256 "b06d9b29822805c536890deb4f1eeb10dd251233b543c0febecb1b3856d1b8d9"
+      sha256 "b0f87b89080dae576d576583ca0473a07f7401646a8423fb8524be409836dc1c"
     end
     on_arm do
-      url "https://github.com/cybroslabs/ouroctl/releases/download/v0.9.13/ouroctl_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/ouroctl/releases/download/homebrew-tools-v0.9.14/homebrew-tools_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/ouroctl"
-      sha256 "07c7d11a8b900e8185cde97605a4453b4cb36e1256979b7d3d0a0a44662f720e"
+      sha256 "c62ae4ef76a717b11d9130dbed2f9d429488d7b6844330d6a421c76ec5068865"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/ouroctl/releases/download/v0.9.13/ouroctl_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/ouroctl/releases/download/homebrew-tools-v0.9.14/homebrew-tools_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/ouroctl"
-      sha256 "826463682fced40ffc2483c2015fbf6afa78fe82bbc1ed462beeb3ae81bd31db"
+      sha256 "119dc9525c6bf1131d4e2ebfc18448bf77976193a8b1f71a34fb8924dfd081fb"
     end
     on_arm do
-      url "https://github.com/cybroslabs/ouroctl/releases/download/v0.9.13/ouroctl_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/ouroctl/releases/download/homebrew-tools-v0.9.14/homebrew-tools_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/ouroctl"
-      sha256 "1583d108a4bcaf1819c9a029663dfa23fb0aa962adc5fc6255522dda387c257a"
+      sha256 "692086f18b0a1ae6c7dfa86489e0f8b849fb48f74afa60446871a466eaec31cb"
+    end
+  end
+
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/ouroctl"]
     end
   end
 
