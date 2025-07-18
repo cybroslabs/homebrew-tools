@@ -2,7 +2,7 @@
 cask "ouroctl" do
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.9.17"
+  version "0.9.18"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,27 +12,27 @@ cask "ouroctl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.17/ouroctl_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.18/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "729e606bde27523386ad0183992f87986ee646ec5924bf53ec8746983e86411c"
+      sha256 "f0d000ec177bfa1420a0c3ea36633815f6b2a5c37cb6a8d4eb2048c91bd24695"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.17/ouroctl_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.18/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "6ddeae2c1d9b72db541879791c7698659dcd07c84d4fdf08e1b1cec5c5dacdba"
+      sha256 "38b6dc4ab16d2f968dc734ebdc16ae160deceeb86afc9d34d3cd1d8443aaf3b4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.17/ouroctl_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.18/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "6fc8b1513996463b12fa8e233ec15d7576b63bc282f4437c7b0524d0a033c8d0"
+      sha256 "e19745fc0feb14bb089f61aba8c82a33df9987871bccaeb30ccc3f7fc9573ab3"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.17/ouroctl_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.18/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "d4d1b53c526c240d83382d7eec8110450d4725c9f43c97c48d76ae540e1757d1"
+      sha256 "7c4ab0fafdef17255f8b40fac2a7802bc989730218bc5374434d4cfdf29f1dc3"
     end
   end
 
