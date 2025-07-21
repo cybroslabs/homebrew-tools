@@ -2,37 +2,38 @@
 cask "ouroctl" do
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.9.20"
+  version "0.9.21"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "ouroctl"
+  manpage "man/*"
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.20/ouroctl_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.21/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "9ae9b803004574e655685ed3fb868971ef333ad0169dca87c7240309da9a2446"
+      sha256 "69d23450c349b0cf576f609e2f6f6a348b3b70d3c99b96c5db2dc5271b750dc7"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.20/ouroctl_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.21/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "876d5463970350eeb086f62e9b69715da3180ef7aef619502d347cf7b6065b5d"
+      sha256 "479dfa0dd3b05ca3709c702a70222ae4339504cc06cc210d2f5931e119ba4098"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.20/ouroctl_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.21/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "e54eb5657772d86fbab3caae95e1b1b2871fdb2df99070e1c9210b3f7de835ca"
+      sha256 "b9da3ff081d1f205a7133b1581885aefd3569158c910b2858e60d3765d45d005"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.20/ouroctl_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v0.9.21/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "507fe6a38645a4aa850a814fa8fead680bbb45a6af9bcb30d2629b78eb882c08"
+      sha256 "01e966f6b94f02a71ebb77caca6182734f154101c7b82451834a3ae499fb7cfe"
     end
   end
 
