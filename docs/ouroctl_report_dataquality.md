@@ -4,28 +4,37 @@ Get a data quality report
 
 ### Synopsis
 
-Get a report of data quality, which assesses the accuracy and completeness of the data in the system.
+Retrieve a report of data quality that assesses the accuracy and completeness of the data in the system.
+The report can be filtered by device group, specific devices, or selected fields, and constrained to a specific time range.
 
 Status bits:
-0x00000001 - criticalerror
-0x00000002 - clockinvalid
-0x00000004 - datanotvalid
-0x00000008 - daylightsavingtime
-0x00000020 - clockadjusted
-0x00000080 - powerdown
-0x00000100 - billingperiodreset
-0x00000200 - parametrizationchanged
-0x00000400 - counteroverflow
-0x00010000 - uservalue
-0x00020000 - importedvalue
-0x00040000 - estimatedvalue
-0x00080000 - intermediatevalue
-0x00100000 - substitutedvalue
-0x00200000 - validvalue
-0x00400000 - invalidvalue
-0x00800000 - dataqualityconcentrator
-0x01000000 - dataqualitystatus24
-0x02000000 - dataqualitystatus25
+0x0000000000000200 - Parametrization Changed
+0x0000000000000400 - Counter Overflow
+0x0000000000010000 - User Value
+0x0000000000800000 - Data Quality Concentrator
+0x0080000000000000 - User Defined 55
+0x0000000000000008 - Daylight Saving Time
+0x0000000000000100 - Billing Period Reset
+0x0000000000080000 - Intermediate Value
+0x0000000001000000 - Data Quality Status 24
+0x0100000000000000 - User Defined 56
+0x0200000000000000 - User Defined 57
+0x0400000000000000 - User Defined 58
+0x0800000000000000 - User Defined 59
+0x0000000000000080 - Power Down
+0x0000000000020000 - Imported Value
+0x0000000000040000 - Estimated Value
+0x0000000000100000 - Substituted Value
+0x0000000000400000 - Invalid Value
+0x1000000000000000 - User Defined 60
+0x4000000000000000 - User Defined 62
+0x0000000000000001 - Critical Error
+0x0000000000200000 - Valid Value
+0x0000000002000000 - Data Quality Status 25
+0x2000000000000000 - User Defined 61
+0x0000000000000002 - Clock Invalid
+0x0000000000000004 - Data Not Valid
+0x0000000000000020 - Clock Adjusted
 
 
 ```
@@ -35,26 +44,29 @@ ouroctl report dataquality [flags]
 ### Examples
 
 ```
-  # Create report for all devices in the system
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague
+  # Create report for all devices in the system with default timezone 'Europe/Prague' and status 0 (StatusBitsCriticalError)
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --status 0
+
+  # Create report for all devices in the system with default timezone 'Europe/Prague' and combination of status (StatusBitsCriticalError, StatusBitsDataNotValid, StatusBitsPowerDown)
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --status 0,2,7
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --status 0 --status 2 --status 7
 
   # Create report for all devices in the system with timezone Europe/Prague
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague --status 0
 
   # Create report for all devices in the system and include specific fields from metadata or managed data of the device
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --status 0
 
   # Create report for all devices in the system and include specific fields from metadata or managed data of the device
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS --status 0
 
   # Create report for specific devices
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2  --timezone Europe/Prague
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2 --status 0
 ```
 
 ### Options
 
 ```
-  -s, --bad-status strings    Bad status code of readout to include in the 'dataquality' report
   -g, --device-group string   Device group to filter the report (optional)
   -m, --devices strings       Comma-separated list of devices to include in the report (optional)
   -d, --fields strings        Comma-separated list of fields to include in the report (optional)
@@ -62,6 +74,7 @@ ouroctl report dataquality [flags]
   -F, --from string           Start date for the report [yyyy-mm-ddTHH:MM:SS]
   -h, --help                  help for dataquality
   -o, --output string         Output type for the report (console, json, csv, xlsx) (default "console")
+  -s, --status strings        Comma-separated list of status codes (decimal or hexadecimal) of readout to include in the 'dataquality' report
       --timezone string       Timezone for the report (default "Europe/Prague") (optional) (default "Europe/Prague")
   -T, --to string             End date for the report [yyyy-mm-ddTHH:MM:SS]
 ```

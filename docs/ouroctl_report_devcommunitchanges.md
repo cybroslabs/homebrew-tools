@@ -13,17 +13,20 @@ ouroctl report devcommunitchanges [flags]
 ### Examples
 
 ```
-  # Create report for all devices in the system
+  # Create report for all devices in the system  with default timezone 'Europe/Prague'
+  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00
+
+  # Create report for all devices in the system  with timezone 'Europe/Prague'
   ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague
 
   # Create report for all devices in the system and include specific fields from metadata or managed data of the device
-  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague
+  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle
 
   # Create report for all devices in the device group
-  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague
+  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS
 
   # Create report for specific devices
-  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2  --timezone Europe/Prague
+  ouroctl report devcommunitchanges --output json --file devcommunitchanges.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2
 ```
 
 ### Options
