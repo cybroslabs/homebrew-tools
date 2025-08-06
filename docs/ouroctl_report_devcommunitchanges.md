@@ -32,14 +32,14 @@ ouroctl report devcommunitchanges [flags]
 ### Options
 
 ```
-  -g, --device-group string   Device group to filter the report (optional)
-  -m, --devices strings       Comma-separated list of devices to include in the report (optional)
-  -d, --fields strings        Comma-separated list of fields to include in the report (optional)
+  -g, --device-group string   Device group to filter the report
+  -m, --devices strings       Comma-separated list of devices to include in the report
+  -d, --fields strings        Comma-separated list of fields to include in the report
   -f, --file string           File name to save the report (required for non-console output)
   -F, --from string           Start date for the report [yyyy-mm-ddTHH:MM:SS]
   -h, --help                  help for devcommunitchanges
   -o, --output string         Output type for the report (console, json, csv, xlsx) (default "console")
-      --timezone string       Timezone for the report (default "Europe/Prague") (default "Europe/Prague")
+      --timezone string       Timezone for the report (default "Europe/Prague")
   -T, --to string             End date for the report [yyyy-mm-ddTHH:MM:SS]
 ```
 
