@@ -9,9 +9,7 @@ Retrieve a list of defined entities in the OuroPlatform system.
 ### Options
 
 ```
-  -f, --file string     File name to save the output (required for non-console output)
-  -h, --help            help for list
-  -o, --output string   Output type for the report (console, json, csv, xlsx) (default "console")
+  -h, --help   help for list
 ```
 
 ### SEE ALSO

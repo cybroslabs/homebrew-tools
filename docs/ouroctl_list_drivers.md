@@ -22,13 +22,8 @@ ouroctl list drivers [flags]
 ### Options
 
 ```
-  -h, --help   help for drivers
-```
-
-### Options inherited from parent commands
-
-```
   -f, --file string     File name to save the output (required for non-console output)
+  -h, --help            help for drivers
   -o, --output string   Output type for the report (console, json, csv, xlsx) (default "console")
 ```
 
