@@ -36,13 +36,16 @@ ouroctl report dataquality [flags]
 
 ```
   # Create report for all devices in the system
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague\n
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague
+
+  # Create report for all devices in the system with timezone Europe/Prague
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00
 
   # Create report for all devices in the system and include specific fields from metadata or managed data of the device
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague\n
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague
 
   # Create report for all devices in the system and include specific fields from metadata or managed data of the device
-  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague\n
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague
 
   # Create report for specific devices
   ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2  --timezone Europe/Prague
@@ -59,7 +62,7 @@ ouroctl report dataquality [flags]
   -F, --from string           Start date for the report [yyyy-mm-ddTHH:MM:SS]
   -h, --help                  help for dataquality
   -o, --output string         Output type for the report (console, json, csv, xlsx) (default "console")
-      --timezone string       Timezone for the report (default "Europe/Prague") (default "Europe/Prague")
+      --timezone string       Timezone for the report (default "Europe/Prague") (optional) (default "Europe/Prague")
   -T, --to string             End date for the report [yyyy-mm-ddTHH:MM:SS]
 ```
 
