@@ -14,9 +14,8 @@ ouroctl list devices [flags]
 
 ```
 ouroctl list devices --output json -f devices.json
-			ouroctl list devices --output csv -f devices.csv
-			ouroctl list devices --output xlsx -f devices.xlsx
-			ouroctl list devices --output console
+
+			# Default output is console
 			ouroctl list devices
 ```
 

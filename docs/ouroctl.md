@@ -6,18 +6,6 @@ A command line tool for OuroPlatform deployments
 
 The ouroctl command line tool is a CLI tool for managing OuroPlatform deployments. It allows you to interact with OuroPlatform, manage configurations, generate reports, and more.
 
-### Examples
-
-```
-ouroctl [command] [flags]
-		Available commands:
-		- get: Retrieve templates and data for various components
-		- list: List system entities
-		- apply: Apply changes to the system
-		- set: Set configuration values
- s		- report: Generate reports for system entities
-```
-
 ### Options
 
 ```

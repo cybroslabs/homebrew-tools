@@ -6,19 +6,6 @@ List system entities
 
 Retrieve a list of defined entities in the OuroPlatform system.
 
-### Examples
-
-```
-ouroctl list [command] [flags]
-		Available commands:
-		- drivers: Get a list of drivers
-		- registers: Get a list of device configuration registers
-		- variables: Get a list of variables
-		- deviceconfigurationtemplates: Get a list of device configuration templates
-		- devices: Get a list of devices
-		- communicationunits: Get a list of communication units
-```
-
 ### Options
 
 ```

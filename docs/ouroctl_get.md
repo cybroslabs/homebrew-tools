@@ -6,20 +6,6 @@ Get commands to retrieve system data
 
 The 'get' commands allow you to retrieve templates for various components and other data used within PuroPlatform systems.
 
-### Examples
-
-```
-ouroctl get [comand] [flags]
-		Available commands:
-		- node: Get a template for nodes (communication units and devices)
-		- register: Get a template for a register
-		- variable: Get a template for a variable
-		- deviceconfigurationtemplate: Get a template for a device configuration template
-		- devicegroup: Get a template for a device group
-		- devicefields: Get a template for device fields
-		- communicationunitfields: Get a template for communication unit fields
-```
-
 ### Options
 
 ```

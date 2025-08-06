@@ -5,6 +5,8 @@ Get a template for nodes (communication units and devices)
 ### Synopsis
 
 Retrieves a template for nodes that can be used to create new communication units and devices for a specific driver type.
+The template will include all necessary fields required for creating device and communication unit.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get node [flags]
@@ -13,8 +15,10 @@ ouroctl get node [flags]
 ### Examples
 
 ```
-ouroctl get node --driver-type <driver-type> --link-protocol <link-protocol> --link-type <link-type> --app-protocol <app-protocol> --device-only
-		ouroctl get node --driver-type <driver-type> --link-protocol <link-protocol> --link-type <link-type> --app-protocol <app-protocol>
+ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS
+
+		# Create a template only for a device
+		ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS  --device-only
 ```
 
 ### Options

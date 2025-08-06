@@ -5,6 +5,8 @@ Get a template for a register
 ### Synopsis
 
 Retrieves a template for a register that can be used to create new device configuration registers.
+The template will include all necessary fields required for creating registers.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get register [flags]
@@ -13,7 +15,7 @@ ouroctl get register [flags]
 ### Examples
 
 ```
-ouroctl get register --driver-type <driver-type>
+ouroctl get register --driver-type GENERIC_DLMS
 ```
 
 ### Options

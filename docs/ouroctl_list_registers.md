@@ -14,9 +14,8 @@ ouroctl list registers [flags]
 
 ```
 ouroctl list registers --output json -f registers.json
-			ouroctl list registers --output csv -f registers.csv
-			ouroctl list registers --output xlsx -f registers.xlsx
-			ouroctl list registers --output console
+
+			# Default output is console
 			ouroctl list registers
 ```
 

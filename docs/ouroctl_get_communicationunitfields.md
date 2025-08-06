@@ -5,6 +5,8 @@ Get a template for creating or updating fields on communication unit
 ### Synopsis
 
 Retrieve a template for communication unit fields that can be used to create or update fields in metadata on communication unit.
+The template will include all necessary fields required for creating communication unit fields.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get communicationunitfields [flags]

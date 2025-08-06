@@ -14,9 +14,8 @@ ouroctl list deviceconfigurationtemplates [flags]
 
 ```
 ouroctl list deviceconfigurationtemplates --output json -f deviceconfigurationtemplates.json
-			ouroctl list deviceconfigurationtemplates --output csv -f deviceconfigurationtemplates.csv
-			ouroctl list deviceconfigurationtemplates --output xlsx -f deviceconfigurationtemplates.xlsx
-			ouroctl list deviceconfigurationtemplates --output console
+
+			# Default output is console
 			ouroctl list deviceconfigurationtemplates
 ```
 

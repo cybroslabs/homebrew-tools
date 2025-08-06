@@ -5,6 +5,8 @@ Get a template for creating or updating fields on devices
 ### Synopsis
 
 Retrieve a template for device fields that can be used to create or update fields in metadata on devices.
+The template will include all necessary fields required for creating device fields.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get devicefields [flags]

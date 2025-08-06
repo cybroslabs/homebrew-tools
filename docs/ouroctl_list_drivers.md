@@ -14,9 +14,8 @@ ouroctl list drivers [flags]
 
 ```
 ouroctl list drivers --output json -f drivers.json
-			ouroctl list drivers --output csv -f drivers.csv
-			ouroctl list drivers --output xlsx -f drivers.xlsx
-			ouroctl list drivers --output console
+
+			# Default output is console
 			ouroctl list drivers
 ```
 

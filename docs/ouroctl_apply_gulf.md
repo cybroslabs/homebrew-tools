@@ -13,7 +13,7 @@ ouroctl apply gulf [flags]
 ### Examples
 
 ```
-ouroctl apply gulf --file path/to/fields.xlsx --decryption-secret-id <secret-id>
+ouroctl apply gulf --file device_secrets.xml --decryption-secret-id gulf_secret_id
 ```
 
 ### Options

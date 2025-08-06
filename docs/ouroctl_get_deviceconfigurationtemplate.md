@@ -5,6 +5,8 @@ Get a template for a device configuration template
 ### Synopsis
 
 Retrieve a template for a device configuration template that can be used to create new device configuration templates.
+The template will include all necessary fields required for creating device configuration templates.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get deviceconfigurationtemplate [flags]

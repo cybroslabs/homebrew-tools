@@ -5,6 +5,8 @@ Get a template for a device group
 ### Synopsis
 
 Retrieves a template for a device group that can be used to create new device groups.
+The template will include all necessary fields required for creating device groups.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get devicegroup [flags]

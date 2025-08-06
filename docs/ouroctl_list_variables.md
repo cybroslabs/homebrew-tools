@@ -14,9 +14,8 @@ ouroctl list variables [flags]
 
 ```
 ouroctl list variables --output json -f variables.json
-			ouroctl list variables --output csv -f variables.csv
-			ouroctl list variables --output xlsx -f variables.xlsx
-			ouroctl list variables --output console
+
+			# Default output is console
 			ouroctl list variables
 ```
 

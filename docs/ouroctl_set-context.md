@@ -10,12 +10,6 @@ Set the current context for ouroctl. This allows you to easily switch between di
 ouroctl set-context [context] [flags]
 ```
 
-### Examples
-
-```
-ouroctl [commands] [flags] --context <my-context> --verbosity <verbosity-level>
-```
-
 ### Options
 
 ```

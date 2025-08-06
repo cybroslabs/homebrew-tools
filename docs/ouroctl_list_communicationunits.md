@@ -14,9 +14,8 @@ ouroctl list communicationunits [flags]
 
 ```
 ouroctl list communicationunits --output json -f communicationunits.json
-			ouroctl list communicationunits --output csv -f communicationunits.csv
-			ouroctl list communicationunits --output xlsx -f communicationunits.xlsx
-			ouroctl list communicationunits --output console
+
+			# Default output is console
 			ouroctl list communicationunits
 ```
 

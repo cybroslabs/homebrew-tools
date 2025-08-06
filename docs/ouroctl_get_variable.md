@@ -5,6 +5,8 @@ Get a template for a variable
 ### Synopsis
 
 Retrieve a template for a variable that can be used to create new variables.
+The template will include all necessary fields required for variables.
+The template will be stored as the Excel file.
 
 ```
 ouroctl get variable [flags]

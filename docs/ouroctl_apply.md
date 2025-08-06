@@ -6,15 +6,6 @@ Apply changes to the system
 
 Apply changes to the system based on the provided input.
 
-### Examples
-
-```
-ouroctl apply [command] [flags]
-		Available commands:
-		  template   Apply a template to the system
-		  gulf       Apply secrets for object and id
-```
-
 ### Options
 
 ```
