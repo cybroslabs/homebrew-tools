@@ -13,10 +13,10 @@ ouroctl list communicationunits [flags]
 ### Examples
 
 ```
-ouroctl list communicationunits --output json -f communicationunits.json
+  ouroctl list communicationunits --output json -f communicationunits.json
 
-			# Default output is console
-			ouroctl list communicationunits
+  # Default output is console
+  ouroctl list communicationunits
 ```
 
 ### Options

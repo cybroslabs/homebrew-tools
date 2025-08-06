@@ -13,10 +13,10 @@ ouroctl list variables [flags]
 ### Examples
 
 ```
-ouroctl list variables --output json -f variables.json
+  ouroctl list variables --output json -f variables.json
 
-			# Default output is console
-			ouroctl list variables
+  # Default output is console
+  ouroctl list variables
 ```
 
 ### Options

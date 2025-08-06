@@ -15,7 +15,7 @@ ouroctl get devicefields [flags]
 ### Examples
 
 ```
-ouroctl get devicefields
+  ouroctl get devicefields
 ```
 
 ### Options

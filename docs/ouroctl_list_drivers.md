@@ -13,10 +13,10 @@ ouroctl list drivers [flags]
 ### Examples
 
 ```
-ouroctl list drivers --output json -f drivers.json
+  ouroctl list drivers --output json -f drivers.json
 
-			# Default output is console
-			ouroctl list drivers
+  # Default output is console
+  ouroctl list drivers
 ```
 
 ### Options

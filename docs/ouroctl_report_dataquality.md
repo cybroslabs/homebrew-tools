@@ -35,17 +35,17 @@ ouroctl report dataquality [flags]
 ### Examples
 
 ```
-# Create report for all devices in the system
-		ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague\n
+  # Create report for all devices in the system
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --timezone Europe/Prague\n
 
-		# Create report for all devices in the system and include specific fields from metadata or managed data of the device
-		ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague\n
+  # Create report for all devices in the system and include specific fields from metadata or managed data of the device
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --fields systitle --timezone Europe/Prague\n
 
-		# Create report for all devices in the system and include specific fields from metadata or managed data of the device
-		ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague\n
+  # Create report for all devices in the system and include specific fields from metadata or managed data of the device
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --device-group GROUP_DLMS  --timezone Europe/Prague\n
 
-		# Create report for specific devices
-		ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2  --timezone Europe/Prague
+  # Create report for specific devices
+  ouroctl report dataquality --output json --file dataquality.json --from 2025-06-27T00:00:00 --to 2025-06-27T10:00:00 --devices METER1,METER2  --timezone Europe/Prague
 ```
 
 ### Options

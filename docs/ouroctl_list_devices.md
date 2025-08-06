@@ -13,10 +13,10 @@ ouroctl list devices [flags]
 ### Examples
 
 ```
-ouroctl list devices --output json -f devices.json
+  ouroctl list devices --output json -f devices.json
 
-			# Default output is console
-			ouroctl list devices
+  # Default output is console
+  ouroctl list devices
 ```
 
 ### Options

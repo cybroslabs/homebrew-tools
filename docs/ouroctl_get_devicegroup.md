@@ -15,7 +15,7 @@ ouroctl get devicegroup [flags]
 ### Examples
 
 ```
-ouroctl get devicegroup
+  ouroctl get devicegroup
 ```
 
 ### Options

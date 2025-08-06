@@ -15,7 +15,7 @@ ouroctl get register [flags]
 ### Examples
 
 ```
-ouroctl get register --driver-type GENERIC_DLMS
+  ouroctl get register --driver-type GENERIC_DLMS
 ```
 
 ### Options

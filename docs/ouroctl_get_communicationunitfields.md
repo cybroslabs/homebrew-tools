@@ -15,7 +15,7 @@ ouroctl get communicationunitfields [flags]
 ### Examples
 
 ```
-ouroctl get communicationunitfields
+  ouroctl get communicationunitfields
 ```
 
 ### Options

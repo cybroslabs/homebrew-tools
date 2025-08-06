@@ -15,10 +15,11 @@ ouroctl get node [flags]
 ### Examples
 
 ```
-ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS
+  # Create a template for a communication unit and a device
+  ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS
 
-		# Create a template only for a device
-		ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS  --device-only
+  # Create a template only for a device
+  ouroctl get node --driver-type GENERIC_DLMS --link-protocol HDLC --link-type TCPIP --app-protocol DLMS  --device-only
 ```
 
 ### Options

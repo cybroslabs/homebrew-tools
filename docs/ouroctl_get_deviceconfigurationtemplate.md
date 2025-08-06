@@ -15,7 +15,7 @@ ouroctl get deviceconfigurationtemplate [flags]
 ### Examples
 
 ```
-ouroctl get deviceconfigurationtemplate
+ ouroctl get deviceconfigurationtemplate
 ```
 
 ### Options

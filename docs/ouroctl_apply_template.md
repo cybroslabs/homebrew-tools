@@ -13,11 +13,11 @@ ouroctl apply template [flags]
 ### Examples
 
 ```
-# Only create new objects, do not update existing ones
-		ouroctl apply template --file all_in_one.xlsx
+  # Only create new objects, do not update existing ones
+  ouroctl apply template --file all_in_one.xlsx
 
-		# Create or update existing objects
-		ouroctl apply template --file all_in_one.xlsx --update
+  # Create or update existing objects
+  ouroctl apply template --file all_in_one.xlsx --update
 ```
 
 ### Options

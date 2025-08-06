@@ -13,10 +13,10 @@ ouroctl list registers [flags]
 ### Examples
 
 ```
-ouroctl list registers --output json -f registers.json
+  ouroctl list registers --output json -f registers.json
 
-			# Default output is console
-			ouroctl list registers
+  # Default output is console
+  ouroctl list registers
 ```
 
 ### Options

@@ -15,7 +15,7 @@ ouroctl get variable [flags]
 ### Examples
 
 ```
-ouroctl get variable
+  ouroctl get variable
 ```
 
 ### Options

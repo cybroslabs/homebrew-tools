@@ -13,10 +13,10 @@ ouroctl list deviceconfigurationtemplates [flags]
 ### Examples
 
 ```
-ouroctl list deviceconfigurationtemplates --output json -f deviceconfigurationtemplates.json
+  ouroctl list deviceconfigurationtemplates --output json -f deviceconfigurationtemplates.json
 
-			# Default output is console
-			ouroctl list deviceconfigurationtemplates
+  # Default output is console
+  ouroctl list deviceconfigurationtemplates
 ```
 
 ### Options
