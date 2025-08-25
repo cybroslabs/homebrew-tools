@@ -8,33 +8,33 @@ Retrieves a data quality report that assesses the accuracy and completeness of d
 The report can be filtered by device group, specific devices, or selected fields, and constrained to a specific time range.
 
 Status bits:
-0x0000000000040000 - Estimated Value
-0x0000000001000000 - Data Quality Status 24
-0x0100000000000000 - User Defined 56
-0x2000000000000000 - User Defined 61
-0x4000000000000000 - User Defined 62
-0x0000000000000001 - Critical Error
-0x0000000000000004 - Data Not Valid
-0x0000000000000020 - Clock Adjusted
-0x0000000000000100 - Billing Period Reset
-0x0000000000000400 - Counter Overflow
 0x0000000000010000 - User Value
-0x0000000000020000 - Imported Value
-0x0000000000200000 - Valid Value
-0x0000000000000008 - Daylight Saving Time
-0x0000000000000080 - Power Down
+0x0000000000040000 - Estimated Value
+0x0100000000000000 - User Defined 56
+0x0000000000080000 - Intermediate Value
 0x0000000000100000 - Substituted Value
 0x0000000000400000 - Invalid Value
 0x0000000002000000 - Data Quality Status 25
-0x0200000000000000 - User Defined 57
-0x0400000000000000 - User Defined 58
-0x0000000000000002 - Clock Invalid
-0x0000000000000200 - Parametrization Changed
-0x0000000000080000 - Intermediate Value
-0x0000000000800000 - Data Quality Concentrator
 0x0080000000000000 - User Defined 55
 0x0800000000000000 - User Defined 59
+0x4000000000000000 - User Defined 62
+0x0000000000000001 - Critical Error
+0x0000000000000200 - Parametrization Changed
+0x0400000000000000 - User Defined 58
 0x1000000000000000 - User Defined 60
+0x2000000000000000 - User Defined 61
+0x0000000000000020 - Clock Adjusted
+0x0000000000000400 - Counter Overflow
+0x0000000000020000 - Imported Value
+0x0000000000200000 - Valid Value
+0x0000000000800000 - Data Quality Concentrator
+0x0000000001000000 - Data Quality Status 24
+0x0200000000000000 - User Defined 57
+0x0000000000000002 - Clock Invalid
+0x0000000000000004 - Data Not Valid
+0x0000000000000008 - Daylight Saving Time
+0x0000000000000080 - Power Down
+0x0000000000000100 - Billing Period Reset
 
 
 ```
