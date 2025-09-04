@@ -17,11 +17,11 @@ The 'get' commands allow you to retrieve templates for various components and ot
 
 * [ouroctl](ouroctl.md)	 - A command line tool for OuroPlatform deployments
 * [ouroctl get communicationunitfields](ouroctl_get_communicationunitfields.md)	 - Retrieve a template for creating or updating fields in communication units
-* [ouroctl get device-configuration-template](ouroctl_get_device-configuration-template.md)	 - Retrieve a template for creating or updating device configuration templates
+* [ouroctl get device-configuration-template-template](ouroctl_get_device-configuration-template-template.md)	 - Retrieve a template for creating or updating device configuration templates
 * [ouroctl get devicefields](ouroctl_get_devicefields.md)	 - Retrieve a template for creating or updating fields on devices
 * [ouroctl get devicegroup](ouroctl_get_devicegroup.md)	 - Retrieve a template for device groups
 * [ouroctl get license-code](ouroctl_get_license-code.md)	 - Retrieve a license request code for the current system
-* [ouroctl get node](ouroctl_get_node.md)	 - Retrieve a template for nodes (communication units and devices)
+* [ouroctl get node-template](ouroctl_get_node-template.md)	 - Retrieve a template for nodes (communication units and devices)
 * [ouroctl get register-template](ouroctl_get_register-template.md)	 - Retrieve a template for registers
 * [ouroctl get variable-template](ouroctl_get_variable-template.md)	 - Retrieve a template for variables
 
