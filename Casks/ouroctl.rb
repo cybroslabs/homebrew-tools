@@ -3,7 +3,7 @@ cask "ouroctl" do
   name "ouroctl"
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.18.6"
+  version "0.18.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,7 +14,7 @@ cask "ouroctl" do
   manpage "man/ouroctl-apply-template.1.gz"
   manpage "man/ouroctl-apply.1.gz"
   manpage "man/ouroctl-get-communicationunitfields.1.gz"
-  manpage "man/ouroctl-get-deviceconfigurationtemplate.1.gz"
+  manpage "man/ouroctl-get-device-configuration-template.1.gz"
   manpage "man/ouroctl-get-devicefields.1.gz"
   manpage "man/ouroctl-get-devicegroup.1.gz"
   manpage "man/ouroctl-get-license-code.1.gz"
@@ -43,12 +43,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "7aa63d3fccec20a468a14a1227492a95aff7e50f912586d00ab8f4de2523374a"
+      sha256 "fd23475f6d9faf6f4a7b59687c6eacceb0cb4f698e788787eb207ff207cbc0c3"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "c70e9e0238b39f58db955262bf83586eb0c18d0bacd1f7d3bd29f914232a41ad"
+      sha256 "ce646977b3d522beb4b8beb19057b7ef60999c4e278ad2d6a8b2db74d1793ea7"
     end
   end
 
@@ -56,12 +56,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "83be47dc330c93e069f2b4ca23a7888c79d34d45d293027d4a8a6035a2817c68"
+      sha256 "66ef1f1a8d83bf3e36112a3ecd91ab054439563b24f5668bbc4f56c2265963ef"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "0ee51ddc549d1ff9ed7d8b82f8462e31328ec15a3ac97998cfc980e054622417"
+      sha256 "ae2b7240b2fa68dc67e3413f934609b8f791feae0e8e5935cea1e946e916a4dd"
     end
   end
 
