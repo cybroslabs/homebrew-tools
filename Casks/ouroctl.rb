@@ -3,7 +3,7 @@ cask "ouroctl" do
   name "ouroctl"
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.18.25"
+  version "0.19.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,6 +11,7 @@ cask "ouroctl" do
 
   binary "ouroctl"
   manpage "man/ouroctl-apply-gulf.1.gz"
+  manpage "man/ouroctl-apply-secrets.1.gz"
   manpage "man/ouroctl-apply-template.1.gz"
   manpage "man/ouroctl-apply.1.gz"
   manpage "man/ouroctl-get-communicationunit-fields-template.1.gz"
@@ -44,12 +45,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "bc4689ba134aa311d55cd4334c1d171c79771eb96064b70a2957ceacb39ce0ff"
+      sha256 "70d5ba0a36912fbd897e144f7082164539271f7ea22b7f0e0e904ab85d500499"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "fa36962bd76b18d2cbdd1579656cf3955ebc3e49e5d0eb96afde7582fc0be70b"
+      sha256 "fe0bd1b531fdf408b987d73883778408e6537cd627c1129f454ebeda7d160dff"
     end
   end
 
@@ -57,12 +58,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "516ff68c326131bdd751f2054ee64113f6f950c1ea16fd768a32df88ac888f3f"
+      sha256 "fc18e3c0ed0e6b82b096663e8d5e4b4eb17217c6a731774c07c89a95ee6a08f6"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "5b9abadd48016dff768c4c689a274066f57d95d1a35b0614ed7828d3a5bb4666"
+      sha256 "223074cbb3ddf49d0363637735da9ea2396e5a0e072a7e620415dccc3b3af37e"
     end
   end
 
