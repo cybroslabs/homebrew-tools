@@ -1,4 +1,4 @@
-## ouroctl apply gulf
+## ouroctl apply secrets
 
 Apply secrets for a specified object and ID
 
@@ -7,21 +7,22 @@ Apply secrets for a specified object and ID
 Applies secrets to a specific object and its ID. The object can be either a device or a communication unit.
 
 ```
-ouroctl apply gulf [flags]
+ouroctl apply secrets [flags]
 ```
 
 ### Examples
 
 ```
-  ouroctl apply gulf --file device_secrets.xml --decryption-secret-id secret_id
+  ouroctl apply secrets --file units.json --driver-type CYBROSLABS_DLMS_LN [--decryption-secret-id secret_id]
 ```
 
 ### Options
 
 ```
   -s, --decryption-secret-id string   ID of the data decryption secret to use
-  -f, --file string                   Path to the template file to apply
-  -h, --help                          help for gulf
+  -d, --driver-type string            Type of the driver to create a template
+  -f, --file string                   Path to the secrets file to apply
+  -h, --help                          help for secrets
 ```
 
 ### SEE ALSO
