@@ -26,6 +26,7 @@ ouroctl apply template [flags]
   -d, --delete        Enable delete mode for the template application. If set the application will delete all objects which missing in the template file.
   -f, --file string   Path to the template file to apply
   -h, --help          help for template
+  -n, --no-cache      No cache mode. If set the application will not use any cached data and will fetch all data from the server.
   -r, --replace       Enable replace mode for the template application. If not set the application runs in a dry-run mode.
 ```
 
