@@ -3,7 +3,7 @@ cask "ouroctl" do
   name "ouroctl"
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.20.9"
+  version "0.21.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,6 +11,7 @@ cask "ouroctl" do
 
   binary "ouroctl"
   manpage "man/ouroctl-apply-gulf.1.gz"
+  manpage "man/ouroctl-apply-license.1.gz"
   manpage "man/ouroctl-apply-secrets.1.gz"
   manpage "man/ouroctl-apply-template.1.gz"
   manpage "man/ouroctl-apply-translation.1.gz"
@@ -47,12 +48,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "0e5aef606f500f501a64cfd3bd4bdd31634604a7164eb1e9f82b46f424b4c962"
+      sha256 "c5999414fd83b7b98325e16a7b4873482453bc59fd3e6f4638f591c0c30d79ec"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "0f1bbadd8c266d5995762ddb83def19284662ce2cab34cb3262bb8619263c127"
+      sha256 "f9195242f5fddfe11190808839b68e8fefdce52e83a0a07f3879163f799987ef"
     end
   end
 
@@ -60,12 +61,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "bb64fc82baa9b089c4fde8bd5979cc5d8c0ca6fa6b698274c0638394b5941016"
+      sha256 "532e265b8e0a94cea5f419f99c454d2987e1f66e1fb6f17a4c01959e9e61468b"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "07846fca79a921ba5153ed006273dfcd764cc5612c7f19108886ed8e16a9e536"
+      sha256 "6755942df72597287c2b2a3d3c4e4a5fc53d86c8f7c81296b6aa9b16cb907d23"
     end
   end
 
