@@ -25,6 +25,7 @@ The 'get' commands allow you to retrieve templates for various components and ot
 * [ouroctl get license-code](ouroctl_get_license-code.md)	 - Retrieve a license request code for the current system
 * [ouroctl get node-template](ouroctl_get_node-template.md)	 - Retrieve a template for nodes (communication units and devices)
 * [ouroctl get register-template](ouroctl_get_register-template.md)	 - Retrieve a template for registers
+* [ouroctl get screen-configs](ouroctl_get_screen-configs.md)	 - Retrieve screen configs
 * [ouroctl get translation](ouroctl_get_translation.md)	 - Retrieve translation
 * [ouroctl get variable-template](ouroctl_get_variable-template.md)	 - Retrieve a template for variables
 

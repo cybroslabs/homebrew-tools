@@ -18,6 +18,7 @@ Applies changes to the system based on the provided input.
 * [ouroctl apply field-descriptors](ouroctl_apply_field-descriptors.md)	 - Apply field descriptors to the system
 * [ouroctl apply gulf](ouroctl_apply_gulf.md)	 - Apply secrets for a specified object and ID
 * [ouroctl apply license](ouroctl_apply_license.md)	 - Apply a license to the system
+* [ouroctl apply screen-configs](ouroctl_apply_screen-configs.md)	 - Apply screen configs to the system
 * [ouroctl apply secrets](ouroctl_apply_secrets.md)	 - Apply secrets for a specified object and ID
 * [ouroctl apply template](ouroctl_apply_template.md)	 - Apply a template to the system
 * [ouroctl apply translation](ouroctl_apply_translation.md)	 - Apply translations to the system
