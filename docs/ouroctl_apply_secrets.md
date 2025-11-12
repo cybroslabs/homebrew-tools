@@ -20,7 +20,7 @@ ouroctl apply secrets [flags]
 
 ```
   -s, --decryption-secret-id string   ID of the data decryption secret to use
-  -d, --driver-type string            Type of the driver to create a template
+  -d, --driver-type string            Type of the driver to which the secrets will be applied
   -f, --file string                   Path to the secrets file to apply
   -h, --help                          help for secrets
 ```
