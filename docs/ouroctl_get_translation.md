@@ -26,7 +26,8 @@ ouroctl get translation [flags]
 ### Options inherited from parent commands
 
 ```
-  -z, --data   fill the template with data from the system
+  -z, --data          fill the template with data from the system
+  -f, --file string   Path with file name to storing the template Excel file [/home/user/templates/<TEMPLATE_TYPE>_template.xlsx]
 ```
 
 ### SEE ALSO

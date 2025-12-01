@@ -15,6 +15,7 @@ The ouroctl command line tool is a CLI tool for managing OuroPlatform deployment
 ### SEE ALSO
 
 * [ouroctl apply](ouroctl_apply.md)	 - Apply changes to the system
+* [ouroctl delete](ouroctl_delete.md)	 - Delete objects from the system
 * [ouroctl get](ouroctl_get.md)	 - Get commands to retrieve system data
 * [ouroctl list](ouroctl_list.md)	 - List system entities
 * [ouroctl report](ouroctl_report.md)	 - Retrieve a report

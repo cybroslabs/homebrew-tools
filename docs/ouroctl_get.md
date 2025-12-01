@@ -9,8 +9,9 @@ The 'get' commands allow you to retrieve templates for various components and ot
 ### Options
 
 ```
-  -z, --data   fill the template with data from the system
-  -h, --help   help for get
+  -z, --data          fill the template with data from the system
+  -f, --file string   Path with file name to storing the template Excel file [/home/user/templates/<TEMPLATE_TYPE>_template.xlsx]
+  -h, --help          help for get
 ```
 
 ### SEE ALSO
@@ -18,6 +19,7 @@ The 'get' commands allow you to retrieve templates for various components and ot
 * [ouroctl](ouroctl.md)	 - A command line tool for OuroPlatform deployments
 * [ouroctl get communicationunit-fields-template](ouroctl_get_communicationunit-fields-template.md)	 - Retrieve a template for creating or updating fields in communication units
 * [ouroctl get context](ouroctl_get_context.md)	 - Get current context
+* [ouroctl get delete-template](ouroctl_get_delete-template.md)	 - Retrieve a template for deleteing objects
 * [ouroctl get device-configuration-template-template](ouroctl_get_device-configuration-template-template.md)	 - Retrieve a template for creating or updating device configuration templates
 * [ouroctl get device-fields-template](ouroctl_get_device-fields-template.md)	 - Retrieve a template for creating or updating fields on devices
 * [ouroctl get device-group-template](ouroctl_get_device-group-template.md)	 - Retrieve a template for device groups
