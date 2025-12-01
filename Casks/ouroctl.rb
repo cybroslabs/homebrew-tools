@@ -3,7 +3,7 @@ cask "ouroctl" do
   name "ouroctl"
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.24.28"
+  version "0.24.29"
 
   livecheck do
     skip "Auto-generated on release."
@@ -52,12 +52,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "d3ddcebef12129e88bf40a729ed757b4fcd39bfc98657d1341a2f7a71694bdb5"
+      sha256 "d97fb208bc13fb73935538eeffe5ac6bba80ee982cf2591c3edbad2f9c096adb"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "b4dafde2ebd97cd40d769d0fc15a1ff42e3336c81a3b222c84643f3e042268a3"
+      sha256 "3064852f7b013ba61705daa5ff682f4b2881f2a9914b58bee64fea2ae4eaa984"
     end
   end
 
@@ -65,12 +65,12 @@ cask "ouroctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "514b0984c1015a1857ab66ecb30e625bbc6fa07f8ca725d0e5fb20971bab00b7"
+      sha256 "9cb18326190d557f70da8e1e97280837bc4fab3e7d06fb89f5cae9d969a9e4dd"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "01406a2e98ee93021bdc3b798c65663fbdc2eef3bf665a8cfb362813413bee12"
+      sha256 "3e310927ec91245e93e0deb9e09103f91bc78e43bfd3b4c82fd492739597292e"
     end
   end
 
