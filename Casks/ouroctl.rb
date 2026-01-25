@@ -3,7 +3,7 @@ cask "ouroctl" do
   name "ouroctl"
   desc "ouroctl controls the ouro platform deployments."
   homepage "https://www.cybroslabs.com/en/products/openhes"
-  version "0.24.83"
+  version "ouroctl-v0.24.90"
 
   livecheck do
     skip "Auto-generated on release."
@@ -53,27 +53,27 @@ cask "ouroctl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "30658d9f260df1ea2ea0db753e24a9933feceb59946bf1d959e6d5d6b74ea2a6"
+      sha256 "96f998a2d2a31b9fb5834322554c38e916d65d53e16a6b207bb6259c5dae625e"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "6c96cb8d0e690f2273c9b5122e8be4de14b398959c8889c977aadabb41bfd12d"
+      sha256 "4075946f05873c082ed8890cd3801d4988adbaba24ec4e19d4d1636ccfabda14"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "4e864267621861fe7c51775bd8a594ee857174bd2a4b526b3771d1426b6f72a0"
+      sha256 "22c618353851febb97aecd1c65ceae563e8a7ba3f07fe896bacc7ae4b3a4d5d3"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/v#{version}/ouroctl_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "608f7da84ef840a83d257f497595f9f879570cc3f6499425648bfa04c9c1fed4"
+      sha256 "03845984e762bc4836bc7c84eeb181926fa37e2f1455bbe8ce415b719293cf20"
     end
   end
 
