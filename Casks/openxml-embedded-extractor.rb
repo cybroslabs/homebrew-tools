@@ -2,8 +2,8 @@
 cask "openxml-embedded-extractor" do
   name "openxml-embedded-extractor"
   desc "Extract embedded files from OpenXML documents (docx, xlsx, pptx)."
-  homepage ""
-  version "0.0.3"
+  homepage "https://www.cybroslabs.com/"
+  version "openxml-embedded-extractor-v0.0.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,27 +15,27 @@ cask "openxml-embedded-extractor" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/openxml-embedded-extractor-v#{version}/openxml-embedded-extractor_Darwin_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "cbae331abec7e56f65afce2df89a9b2a7704c9a04c885e2a8d093f8480e722eb"
+      sha256 "8e0a4cd0f73099e5e3b61263ce7014a3c3fc80894b750d57ab5b98049d3923ad"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/openxml-embedded-extractor-v#{version}/openxml-embedded-extractor_Darwin_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "6c006078effc0262aa77761811091c3ce01489fb3a18e1e14fdc7997d67db975"
+      sha256 "0390716b9a94658c7ddb468419715fa3ddf215a23a167c7868f400a96d13352e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/openxml-embedded-extractor-v#{version}/openxml-embedded-extractor_Linux_x86_64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "d49dc4ccdd43007ff276c1ba4556a7dab193e92229f73b2c5d1dcc8ebceefead"
+      sha256 "a90377ae85466ed8eac5e6d189564c4961d10aec92bcce9d8d3fea8dc2a24055"
     end
     on_arm do
-      url "https://github.com/cybroslabs/homebrew-tools/releases/download/openxml-embedded-extractor-v#{version}/openxml-embedded-extractor_Linux_arm64.tar.gz",
+      url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "4319803fbdc94b434769459df2b336766f091444b8449edb57b1d5d07190959d"
+      sha256 "5d844c20b413a5a0c7619b11c24ca577d3e07512e9a5c93c8ef17066d7382ef0"
     end
   end
 
