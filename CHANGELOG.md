@@ -2,6 +2,10 @@
 
 All notable changes to ouroctl will be documented in this file.
 
+## [v0.3.1] - 2026-03-11
+
+Released version v0.3.1 of omqctl.
+
 ## [v0.25.4] - 2026-03-10
 
 Released version v0.25.4 of ouroctl.
