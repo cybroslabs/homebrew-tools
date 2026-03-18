@@ -3,7 +3,7 @@ cask "openxml-embedded-extractor" do
   name "openxml-embedded-extractor"
   desc "Extract embedded files from OpenXML documents (docx, xlsx, pptx)."
   homepage "https://www.cybroslabs.com/"
-  version "openxml-embedded-extractor-v0.0.6"
+  version "openxml-embedded-extractor-v0.0.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,12 +17,12 @@ cask "openxml-embedded-extractor" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "8e0a4cd0f73099e5e3b61263ce7014a3c3fc80894b750d57ab5b98049d3923ad"
+      sha256 "aafd44038d02ea5a5da871ee6b9e7daaedc4043e1caef3e689d068752f25f409"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "0390716b9a94658c7ddb468419715fa3ddf215a23a167c7868f400a96d13352e"
+      sha256 "53375b60cabd4773a7d1e2b74292cabda98336c0fec77fb7f05dfec9854ec2e3"
     end
   end
 
@@ -30,12 +30,12 @@ cask "openxml-embedded-extractor" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "a90377ae85466ed8eac5e6d189564c4961d10aec92bcce9d8d3fea8dc2a24055"
+      sha256 "0935c41dadfcbe2625f6ef51b0ec21f996c40c1629743b1a6e2afdbac703261d"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "5d844c20b413a5a0c7619b11c24ca577d3e07512e9a5c93c8ef17066d7382ef0"
+      sha256 "8ef9bcb4117ebd4ab7b71661472185e727e4f347c4222f3a7db071785324ce65"
     end
   end
 
