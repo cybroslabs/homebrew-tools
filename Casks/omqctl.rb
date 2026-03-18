@@ -3,7 +3,7 @@ cask "omqctl" do
   name "omqctl"
   desc "omqctl controls the OctopusMQ deployments."
   homepage "https://www.cybroslabs.com/en/products/octopusmq"
-  version "omqctl-v0.4.0"
+  version "omqctl-v0.4.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -51,12 +51,12 @@ cask "omqctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "09d3243b995054046344d75a325708abc652e66b7013d4ffea25891c6b6ba331"
+      sha256 "feca19a8db037f2eda943b84721e0bd3c304ce66800d84862d7408b13beef32e"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "3a336ae852a4899d0129fe969e99b0efef79b3e50f659356d19c17911196c3f2"
+      sha256 "efcf66ae58181463c14a7127d48c925218fac1c679c93e8eba9876dc93850370"
     end
   end
 
@@ -64,12 +64,12 @@ cask "omqctl" do
     on_intel do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_x86_64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "47928136231938f10a37833724ba1fedf1fce72954963bec6310f10051033e13"
+      sha256 "127ce3ef98f4d8d28add2d40aa8050e861f346a31fbc792d1218e87c8be4acc0"
     end
     on_arm do
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_arm64.tar.gz",
         verified: "github.com/cybroslabs/homebrew-tools"
-      sha256 "01ffd525c04e8b7c74b0df6a83b7004d465f9811295d70e7c9fc33413b9c8ad5"
+      sha256 "46867700e4a9fa31dd35996fdc6fec6a84fef75e4f46c013db38fe30fec46c26"
     end
   end
 
