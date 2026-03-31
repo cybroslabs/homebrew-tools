@@ -2,6 +2,10 @@
 
 All notable changes to ouroctl will be documented in this file.
 
+## [v0.26.1] - 2026-03-31
+
+Released version v0.26.1 of ouroctl.
+
 ## [v0.26.0] - 2026-03-31
 
 Released version v0.26.0 of ouroctl.
