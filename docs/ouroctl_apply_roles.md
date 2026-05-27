@@ -15,6 +15,9 @@ ouroctl apply roles [flags]
 ```
   # Apply role configs from a json file
   ouroctl apply roles --file roles.json
+
+  # Create or replace existing objects
+  ouroctl apply roles --file roles.json --replace
 ```
 
 ### Options
