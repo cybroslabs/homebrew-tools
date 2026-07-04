@@ -21,14 +21,14 @@ ouroctl get node-template [flags]
   # Link/app protocol values accept the full enum name or its short form:
   #   --link-protocol LINKPROTO_HDLC  is equivalent to  --link-protocol HDLC
 
-  # Create a template for a communication unit and a device
+  # Create a template for a communication unit and a device (all four are required)
   ouroctl get node-template --driver-type CYBROSLABS_DLMS_LN --link-protocol HDLC --link-type TCPIP --app-protocol DLMS_LN
 
-  # Create a template only for a device
-  ouroctl get node-template --driver-type CYBROSLABS_DLMS_LN --link-protocol HDLC --link-type TCPIP --app-protocol DLMS_LN --device-only
+  # Create a template only for a device (needs only driver type and app protocol)
+  ouroctl get node-template --driver-type CYBROSLABS_DLMS_LN --app-protocol DLMS_LN --device-only
 
-  # Create a template only for a communication unit
-  ouroctl get node-template --driver-type CYBROSLABS_DLMS_LN --link-protocol HDLC --link-type TCPIP --app-protocol DLMS_LN --communication-unit-only
+  # Create a template only for a communication unit (needs only link type and protocol)
+  ouroctl get node-template --driver-type CYBROSLABS_DLMS_LN --link-protocol HDLC --link-type TCPIP --communication-unit-only
 ```
 
 ### Options
