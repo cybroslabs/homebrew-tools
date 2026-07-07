@@ -17,6 +17,10 @@ The 'get' commands allow you to retrieve templates for various components and ot
 ### SEE ALSO
 
 * [ouroctl](ouroctl.md)	 - Command-line tool for OuroPlatform deployments
+* [ouroctl get business-object-component-types](ouroctl_get_business-object-component-types.md)	 - Retrieve business object component types
+* [ouroctl get business-object-components](ouroctl_get_business-object-components.md)	 - Retrieve business object components
+* [ouroctl get business-object-types](ouroctl_get_business-object-types.md)	 - Retrieve business object types
+* [ouroctl get business-objects](ouroctl_get_business-objects.md)	 - Retrieve business objects
 * [ouroctl get communicationunit-fields-template](ouroctl_get_communicationunit-fields-template.md)	 - Retrieve a template for creating or updating fields in communication units
 * [ouroctl get context](ouroctl_get_context.md)	 - Get current context
 * [ouroctl get data-zones](ouroctl_get_data-zones.md)	 - Retrieve zones
