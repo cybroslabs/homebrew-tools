@@ -19,6 +19,7 @@ Apply Excel templates, GULF data, secrets, translations, licenses, field descrip
 * [ouroctl apply business-object-components](ouroctl_apply_business-object-components.md)	 - Apply business object components from JSON file
 * [ouroctl apply business-object-types](ouroctl_apply_business-object-types.md)	 - Apply business object types from JSON file
 * [ouroctl apply business-objects](ouroctl_apply_business-objects.md)	 - Apply business objects from JSON file
+* [ouroctl apply business-relation-types](ouroctl_apply_business-relation-types.md)	 - Apply business relation types from JSON file
 * [ouroctl apply data-zones](ouroctl_apply_data-zones.md)	 - Apply zone configurations from JSON file
 * [ouroctl apply field-descriptors](ouroctl_apply_field-descriptors.md)	 - Apply field descriptors from JSON file
 * [ouroctl apply gulf](ouroctl_apply_gulf.md)	 - Apply vendor-delivered crypto material to devices
