@@ -8,25 +8,25 @@ cask "openxml-embedded-extractor" do
     end
   end
 
-  version "openxml-embedded-extractor-v0.0.12"
+  version "openxml-embedded-extractor-v0.0.13"
 
   on_macos do
     on_arm do
-      sha256 "9440faae8968a6a3822ac37ed3f259f2e507a049947fc46266f33304408a135c"
+      sha256 "9b72326c9e68965a331bb31207354489b408670357cd5bbc8eced30b2dd1e758"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9daec6769e149445690fe35a481cf2a7856943a3387858799e3b4071b83d1f6a"
+      sha256 "44b11a4614288c36c29d18f5cb405022668d50e39b670d99ca294be902b24a71"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "822220deb83d0cfcea3ede43d5308184774a640e42979e025eaf14f22cd36be2"
+      sha256 "1e24338456ee6b2d5c030ad4a5cd9c94bf069948d9c268b540ad5c55ba2405af"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0c65b3f9d6fd415edc7d2801925db210e51010a5ef70500d511bec1c24c2647f"
+      sha256 "2c504f0ffd14839b17ee64f17be4646e1b5e961f623bea839483c2a123358edf"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_x86_64.tar.gz"
     end
   end
