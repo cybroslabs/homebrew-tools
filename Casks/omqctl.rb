@@ -8,25 +8,25 @@ cask "omqctl" do
     end
   end
 
-  version "omqctl-v0.5.18"
+  version "omqctl-v0.5.19"
 
   on_macos do
     on_arm do
-      sha256 "1a3638c61a5c156fa9bd0a69aaadea136ca0ce43fab17c7a5f8381e6d4225bd4"
+      sha256 "f9abce51bc198a3dbd1b3d75408577e7ffa88ea40b1c5cd5f153e06ccba6a31b"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9e116ff4a2ca9b41022db643669d9a871a7e3518ea03ea8e51202cdb5981ae45"
+      sha256 "3db161fdaf06809de899ce0beef7227f058a611f7f99a4138bb688fbee4d0888"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "9a964f1f86cb3590566286c45e593b465f3f450945df2aa23484176c4dca445d"
+      sha256 "bdc386864d60dbe194a009d90065c4689ed9f73bdc5c52aca2ee7a44fdc4fd03"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "54177b253cfda333a2fd51c403deb9f9041dfb6d44fcd88b397c15d730323d8f"
+      sha256 "73be85a1b84f0d95003130b93dcb7fd8ab3f6f4e07d32534a5875a4ccc86bc49"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_x86_64.tar.gz"
     end
   end
@@ -45,7 +45,6 @@ cask "omqctl" do
   manpage "man/omqctl-config-set-context.1.gz"
   manpage "man/omqctl-config-view.1.gz"
   manpage "man/omqctl-config.1.gz"
-  manpage "man/omqctl-queue-commit.1.gz"
   manpage "man/omqctl-queue-create.1.gz"
   manpage "man/omqctl-queue-delete-item.1.gz"
   manpage "man/omqctl-queue-delete.1.gz"
@@ -56,7 +55,6 @@ cask "omqctl" do
   manpage "man/omqctl-queue-noop.1.gz"
   manpage "man/omqctl-queue-pause.1.gz"
   manpage "man/omqctl-queue-pull.1.gz"
-  manpage "man/omqctl-queue-requeue.1.gz"
   manpage "man/omqctl-queue-resize.1.gz"
   manpage "man/omqctl-queue-resume.1.gz"
   manpage "man/omqctl-queue.1.gz"
@@ -70,7 +68,6 @@ cask "omqctl" do
   manpage "man/omqctl-storage-list.1.gz"
   manpage "man/omqctl-storage-lock-any.1.gz"
   manpage "man/omqctl-storage-noop.1.gz"
-  manpage "man/omqctl-storage-release.1.gz"
   manpage "man/omqctl-storage-set.1.gz"
   manpage "man/omqctl-storage.1.gz"
   manpage "man/omqctl-test-benchmark.1.gz"
