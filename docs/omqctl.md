@@ -4,7 +4,7 @@ Command-line tool for OctopusMQ deployments
 
 ### Synopsis
 
-omqctl is a command-line interface for managing OctopusMQ deployments. It manages queues, storages, and their data through the OctopusMQ gRPC API.
+omqctl is a command-line interface for managing OctopusMQ deployments. It manages queues, storages, replicas, and their data through the OctopusMQ gRPC API.
 
 ### Options
 
@@ -20,6 +20,7 @@ omqctl is a command-line interface for managing OctopusMQ deployments. It manage
 
 * [omqctl config](omqctl_config.md)	 - Manage omqctl configuration
 * [omqctl queue](omqctl_queue.md)	 - Manage OctopusMQ queues
+* [omqctl replica](omqctl_replica.md)	 - Manage OctopusMQ replicas
 * [omqctl storage](omqctl_storage.md)	 - Manage OctopusMQ storages
 * [omqctl test](omqctl_test.md)	 - Run tests against an OctopusMQ instance
 * [omqctl version](omqctl_version.md)	 - Print the client version information
