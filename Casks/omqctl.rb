@@ -8,25 +8,25 @@ cask "omqctl" do
     end
   end
 
-  version "omqctl-v0.6.0"
+  version "omqctl-v0.7.0"
 
   on_macos do
     on_arm do
-      sha256 "d927dc33a51e15761ae48b49e01147bdc52c86028528f4351d6b72932c5d3284"
+      sha256 "b998c49bcf5063d5d3822c830035da8b77f6821b63e71be858635b758e3a8aa9"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ae549dc85316d752be4a4a99d74dfb4fb4f1dc18fae5d5607be035ac858defe9"
+      sha256 "d6cbcd6cd8b2a118d004dce2850939db3c08eb0088f2d974307f0e1936f5fddd"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6c36577cfaeca4aea27f47be62531a46a7b2851bd11dbbaf9e57252eaa7a687c"
+      sha256 "39d3cdcc0ff6b9da7e705f009b718d80faf21b5e6ef84e362727b418f08a850f"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "aef793bfcc3e25458cf404c56ed7544486d480cc359b5c51f073b642b18e8a9a"
+      sha256 "ac17b3ab44ec6f429eb80f77c49d598b5f4b1faf12fb2c1b2879f1f1d66579b1"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_x86_64.tar.gz"
     end
   end
@@ -58,6 +58,9 @@ cask "omqctl" do
   manpage "man/omqctl-queue-resize.1.gz"
   manpage "man/omqctl-queue-resume.1.gz"
   manpage "man/omqctl-queue.1.gz"
+  manpage "man/omqctl-replica-destroy.1.gz"
+  manpage "man/omqctl-replica-list.1.gz"
+  manpage "man/omqctl-replica.1.gz"
   manpage "man/omqctl-storage-create.1.gz"
   manpage "man/omqctl-storage-delete-key.1.gz"
   manpage "man/omqctl-storage-delete.1.gz"
