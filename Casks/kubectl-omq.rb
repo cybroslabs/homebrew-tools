@@ -8,25 +8,25 @@ cask "kubectl-omq" do
     end
   end
 
-  version "omqctl-v0.8.0"
+  version "omqctl-v0.8.1"
 
   on_macos do
     on_arm do
-      sha256 "136c5db014dd599653ebc8529cc07dd96221b7e03ef209744d02cff4b9d7e430"
+      sha256 "3b012eb1b12d2a6b320f1362a852e0e6f81083f50555d12093b1f8723c61e19a"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "634423fadd12181d671136a479addc9aca90cd2eb1c6e32493e6825e93543c5b"
+      sha256 "a18fc58e7ed87b4e7f24c5f70540b95b11040494d552c2e1015596d10956dfa7"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1b2565c807ead3c0a30f04880d45c9adf71854ffb7a7e1d8b0788c669ab34759"
+      sha256 "a4000e830cad2ef2def5c0adb2360b24a186e269434491ec01f97ea6ecb0fde4"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "099d3bfc8ad2f19719decd76975e6fb05da0c961100d7ee097e3457c9ce72d1c"
+      sha256 "0ccfde1931920cee5673a563ce0cce438bff6d7faee9a6d5866e46bf08e59dd0"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Linux_x86_64.tar.gz"
     end
   end
