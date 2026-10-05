@@ -1,27 +1,30 @@
-## ouroctl get device-configuration-template-template
+## ouroctl get token
 
-Retrieve a template for creating or updating device configuration templates
+Print a valid access token for the context
 
 ### Synopsis
 
-Retrieves a template for device configuration templates that can be used to create new device configuration templates.
-The template includes all necessary fields required to create device configuration templates.
-The template is provided as an Excel file.
+Prints an access token for the active context, or for the context selected with --context.
+A cached token is refreshed when possible; otherwise the context's login flow runs.
+Only the token is written to standard output, so the command works in command substitution.
 
 ```
-ouroctl get device-configuration-template-template [flags]
+ouroctl get token [flags]
 ```
 
 ### Examples
 
 ```
- ouroctl get device-configuration-template-template
+  ouroctl get token
+  curl -H "Authorization: Bearer $(ouroctl get token)" https://ouro.example.com/api/...
+  ouroctl get token --context prod -o json
 ```
 
 ### Options
 
 ```
-  -h, --help   help for device-configuration-template-template
+  -h, --help            help for token
+  -o, --output string   Output format: text, json (default "text")
 ```
 
 ### Options inherited from parent commands
