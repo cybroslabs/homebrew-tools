@@ -2,6 +2,10 @@
 
 All notable changes to ouroctl will be documented in this file.
 
+## [v2.4.0] - 2026-10-08
+
+Released version v2.4.0 of ouroctl.
+
 ## [v0.8.2] - 2026-10-07
 
 Released version v0.8.2 of omqctl and kubectl-omq.
