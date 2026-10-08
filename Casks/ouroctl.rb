@@ -8,25 +8,25 @@ cask "ouroctl" do
     end
   end
 
-  version "ouroctl-v2.3.2"
+  version "ouroctl-v2.4.0"
 
   on_macos do
     on_arm do
-      sha256 "012191e70186bea96b3cb69d930b0b3c5c0f49081ba201e77497a622cf04c2a0"
+      sha256 "ded2b1a2c2f4e395412e4cd325cd6b5574c6add0c377e4e66ae1f321c361ac29"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "12e30ec4cb5679c51de0f353aa5b58ec9d1a5a8e82300e71c04a2f7819c4e1a4"
+      sha256 "6d112913a99d7dbdff08d9141edd19f90bf9735fb33c4ad8a43ea07992d72a98"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "3780ded0522db55855b504c70eda36d6ebe37e702566fd2be8df5bb8cf2afe6f"
+      sha256 "843af86cc3cca6d12c37f14fadfc7e24300b1ed3085919373bf0c601ba8359a4"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "415469fc171a181ab5c3c9f6ec22804eba6f07f206e5e11a8950dcb52b694b30"
+      sha256 "0fd3bd4e0d4f16208382393e9a5584038f274fd379d962260b3b89bd3ed08f67"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_x86_64.tar.gz"
     end
   end
@@ -46,6 +46,7 @@ cask "ouroctl" do
   manpage "man/ouroctl-apply-business-objects.1.gz"
   manpage "man/ouroctl-apply-business-relation-types.1.gz"
   manpage "man/ouroctl-apply-data-zones.1.gz"
+  manpage "man/ouroctl-apply-environment.1.gz"
   manpage "man/ouroctl-apply-field-descriptors.1.gz"
   manpage "man/ouroctl-apply-gulf.1.gz"
   manpage "man/ouroctl-apply-license.1.gz"
@@ -69,6 +70,7 @@ cask "ouroctl" do
   manpage "man/ouroctl-get-device-configuration-template-template.1.gz"
   manpage "man/ouroctl-get-device-fields-template.1.gz"
   manpage "man/ouroctl-get-device-group-template.1.gz"
+  manpage "man/ouroctl-get-environment.1.gz"
   manpage "man/ouroctl-get-field-descriptors.1.gz"
   manpage "man/ouroctl-get-license-code.1.gz"
   manpage "man/ouroctl-get-node-template.1.gz"
