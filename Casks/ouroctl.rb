@@ -8,25 +8,25 @@ cask "ouroctl" do
     end
   end
 
-  version "ouroctl-v2.5.0"
+  version "ouroctl-v2.5.1"
 
   on_macos do
     on_arm do
-      sha256 "31036db0c7acc09cf92be45e157734d5f88bd79eaf2aa77650586a9928938e8a"
+      sha256 "65aac74ee0461e3338b7b0bb5e918b0a90de13df52323e85d6ad46a2efd85004"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e7202935978f7c3a2d3b881c2ef98df41cce661dedb06ed163b0921f484cb349"
+      sha256 "a2bb2055678597b99bf0956bc841fe88065a796eb510dcf10c8d5c6bd1f30748"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "eb83d3179d42eacdfeda0fc9815fccce15a53cd29c295d91159051de5acce9b4"
+      sha256 "accd944b2eaad3c5deb6709bf418af29e90c4af42543a8ac4af7573f28f6603e"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b09811036ab090f56795a65dfc29003efa1473e5c1c9445e225a893b6359a859"
+      sha256 "42a8b744f1d6213459a045f59229a1f9dc2e72b5caf3d53035a5f8c1f95bd39f"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_x86_64.tar.gz"
     end
   end
