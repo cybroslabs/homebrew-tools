@@ -13,15 +13,19 @@ ouroctl apply license [flags]
 ### Examples
 
 ```
-  # Apply license token
-  ouroctl apply license --token your_license_token
+  # Apply a license token from a file
+  ouroctl apply license --file license.jwt
+
+  # Read it from standard input, so it stays out of the shell history
+  ouroctl apply license --token - < license.jwt
 ```
 
 ### Options
 
 ```
+  -f, --file string    Path to a file holding the license token
   -h, --help           help for license
-  -t, --token string   License token to apply
+  -t, --token string   License token to apply, or - to read it from standard input
 ```
 
 ### Options inherited from parent commands
