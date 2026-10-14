@@ -6,8 +6,8 @@ Export the device configuration of the environment to YAML
 
 Exports the device configuration of the environment to one YAML file that 'apply environment'
 restores into the same or another environment: user-defined field descriptors, registers,
-variables, device configuration templates, communication units, devices with their links,
-and device groups with their static members.
+variables, device configuration templates, the modems of every modem pool, communication
+units, devices with their links, and device groups with their static members.
 
 Objects refer to each other by name. Zones, modem pools, communication buses and drivers are
 referenced by name only: they are not exported and must exist in the target.
@@ -44,7 +44,7 @@ ouroctl get environment [flags]
       --force                    Replace existing secrets files
   -h, --help                     help for environment
       --include-secrets string   Directory to write the secured values and device keys to (default: not exported)
-      --only string              Comma-separated kinds to export: fieldDescriptors, registers, variables, templates, cus, devices, groups (default: all)
+      --only string              Comma-separated kinds to export: fieldDescriptors, registers, variables, templates, modems, cus, devices, groups (default: all)
 ```
 
 ### Options inherited from parent commands

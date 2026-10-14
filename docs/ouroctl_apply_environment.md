@@ -40,7 +40,7 @@ ouroctl apply environment [flags]
       --dry-run          Show what would change without writing anything
   -f, --file string      Path to the environment file to apply
   -h, --help             help for environment
-      --only string      Comma-separated kinds to apply: fieldDescriptors, registers, variables, templates, cus, devices, groups (default: all)
+      --only string      Comma-separated kinds to apply: fieldDescriptors, registers, variables, templates, modems, cus, devices, groups (default: all)
       --parallel int     Concurrent writes for communication units and devices (1-16) (default 1)
       --secrets string   Secrets file written by 'get environment --include-secrets'
 ```
