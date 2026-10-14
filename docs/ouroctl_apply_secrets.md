@@ -4,7 +4,9 @@ Apply secrets from JSON file
 
 ### Synopsis
 
-Apply secrets to devices or communication units from a JSON file for a specific driver type.
+Apply secrets to devices from a JSON file for a specific driver type. Each unit gives a
+meter's serial number and numeric access level (logical) with its AK and EK (base64), its LLS
+password (password, as text), or both.
 
 ```
 ouroctl apply secrets [flags]
