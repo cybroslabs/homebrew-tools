@@ -8,7 +8,7 @@ Applies a file written by 'get environment': every object the target lacks is cr
 every object that differs is updated, matched by name. Nothing is ever deleted, and applying
 the same file again changes nothing. There is no --replace: existing objects are always updated.
 
-Before anything is written, the zones, modem pools, communication buses and drivers the file
+Before anything is written, the zones, communication buses, drivers and modem pools the file
 needs are checked; if any is missing, nothing is applied. An object that fails is reported and
 the rest continue; objects that refer to it fail with the reason.
 
@@ -40,7 +40,7 @@ ouroctl apply environment [flags]
       --dry-run          Show what would change without writing anything
   -f, --file string      Path to the environment file to apply
   -h, --help             help for environment
-      --only string      Comma-separated kinds to apply: fieldDescriptors, registers, variables, templates, modems, cus, devices, groups (default: all)
+      --only string      Comma-separated kinds to apply: fieldDescriptors, registers, variables, templates, pools, modems, cus, devices, groups (default: all)
       --parallel int     Concurrent writes for communication units and devices (1-16) (default 1)
       --secrets string   Secrets file written by 'get environment --include-secrets'
 ```
