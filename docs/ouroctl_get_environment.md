@@ -10,7 +10,11 @@ variables, device configuration templates, communication units, devices with the
 and device groups with their static members.
 
 Objects refer to each other by name. Zones, modem pools, communication buses and drivers are
-listed as prerequisites: they are not exported and must exist in the target.
+referenced by name only: they are not exported and must exist in the target.
+
+User fields are written as plain values ('floor: 3'), typed by their field descriptor. Only
+user-defined field descriptors, and the fields they describe, are exported; other fields an
+object holds are left out and reported, and an update keeps them in the target.
 
 Secured values (passwords and other attributes marked secured) are never written to the file.
 With --include-secrets DIR they are written to DIR/env.secrets.yaml instead, and the device keys
