@@ -8,8 +8,9 @@ Applies a file written by 'get environment': every object the target lacks is cr
 every object that differs is updated, matched by name. Nothing is ever deleted, and applying
 the same file again changes nothing. There is no --replace: existing objects are always updated.
 
-Before anything is written, the zones, drivers, communication buses and modem pools the file
-needs are checked; if any is missing, nothing is applied. An object that fails is reported and
+Before anything is written, the zones and drivers the file names are checked, and so are the
+communication buses and modem pools it names but does not apply itself (not in the file, or
+left out by --only); if any is missing from the target, nothing is applied. An object that fails is reported and
 the rest continue; objects that refer to it fail with the reason.
 
 Secured values are not in the file. Objects that already exist keep theirs; objects created from
