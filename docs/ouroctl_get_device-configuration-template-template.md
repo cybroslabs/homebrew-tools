@@ -15,13 +15,17 @@ ouroctl get device-configuration-template-template [flags]
 ### Examples
 
 ```
- ouroctl get device-configuration-template-template
+  ouroctl get device-configuration-template-template
+
+  # Export the device configuration templates of one driver
+  ouroctl get device-configuration-template-template --data --driver-type LANDISGYR_E450_VIKTOR
 ```
 
 ### Options
 
 ```
-  -h, --help   help for device-configuration-template-template
+  -d, --driver-type strings   With --data, export only the data of these driver types (repeatable or comma-separated)
+  -h, --help                  help for device-configuration-template-template
 ```
 
 ### Options inherited from parent commands

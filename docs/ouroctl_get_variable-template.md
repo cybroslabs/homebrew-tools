@@ -16,12 +16,16 @@ ouroctl get variable-template [flags]
 
 ```
   ouroctl get variable-template
+
+  # Export the variables of two drivers, each listing only that driver's registers
+  ouroctl get variable-template --data --driver-type LANDISGYR_E450_VIKTOR --driver-type CYBROSLABS_GENERIC_DLMS_LN
 ```
 
 ### Options
 
 ```
-  -h, --help   help for variable-template
+  -d, --driver-type strings   With --data, export only the data of these driver types (repeatable or comma-separated)
+  -h, --help                  help for variable-template
 ```
 
 ### Options inherited from parent commands
