@@ -8,25 +8,25 @@ cask "kubectl-omq" do
     end
   end
 
-  version "omqctl-v0.8.5"
+  version "omqctl-v0.8.6"
 
   on_macos do
     on_arm do
-      sha256 "6c5cadb2eaadd8f612559c2ed96286ac3121d37f0d91d1c300a18260acb13e00"
+      sha256 "4a56296f47d2a9f54451ca654318e978bf7210536b7e3eb7bef702a9d482d4b4"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a60c8b55cc754a10cb2d3fbf39d5858d6acf02c6b448d694accdcd341baa0f5f"
+      sha256 "f9e60e35399f7c70e76b050ec84c69864598104091e20663b2a5d048b620845f"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1ac65970b7241da8e1574b7def1d8cef62c861696d818d4fdd29b0ae66bd6b0f"
+      sha256 "a9f1f3a58865a4283c2ae9e2b284afa5366438b86c67ef1e7b041413619955aa"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c541bb7302b37a166b5c5aea581979caa702739dda98084c0136b44d5420ce42"
+      sha256 "a808c6400eb2f8e518c6feb806b2562e78cc351cceb34c0db6bf2ac3548dd375"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/kubectl-omq_Linux_x86_64.tar.gz"
     end
   end
@@ -76,7 +76,7 @@ cask "kubectl-omq" do
   manpage "man/kubectl-omq-version.1.gz"
   manpage "man/kubectl-omq.1.gz"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     kubectl-omq is a kubectl plugin: run it as 'kubectl omq'. It reaches OctopusMQ clusters through the current kube context; the kube user needs get and list on statefulsets and pods, and create on pods/portforward.
