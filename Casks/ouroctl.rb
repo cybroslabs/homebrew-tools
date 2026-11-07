@@ -8,25 +8,25 @@ cask "ouroctl" do
     end
   end
 
-  version "ouroctl-v2.15.6"
+  version "ouroctl-v2.15.7"
 
   on_macos do
     on_arm do
-      sha256 "aa78453a6bec851e72d5b8ee8af3f614d286cc02b91004141ddbfc6b07660e96"
+      sha256 "1c3aaecc951e73359df7f1292dd7012e5cc2a013d38e418cf35f3db077e986c0"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3e3383ab7b1af3e81fc4881d6c143bb159748d328ff72eb4f7f8e0d943d53c84"
+      sha256 "47ef7d332591b7483a19e0efdecafc3da349c6c05a91fd6701d03f53a9a394a2"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "960b84c24361f833df68cd980652149895213be95ac95a766f365e971c6167d1"
+      sha256 "3858d68530be195959d505b679e83dd97ed33a99ba98f8b5da2e9f49d0e23976"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d12537fb47b62009dbae888bda513577fc0e83bc15759af3bac8f42ff43c1166"
+      sha256 "b009f434720c0ff89d3d2381c1986a4d33dafe7de91f0ea7fa34de2d9a0d50b5"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_x86_64.tar.gz"
     end
   end
@@ -98,7 +98,7 @@ cask "ouroctl" do
   manpage "man/ouroctl-version.1.gz"
   manpage "man/ouroctl.1.gz"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     The ouroctl tool is used to control the OuroPlatform deployments.
