@@ -8,25 +8,25 @@ cask "omqctl" do
     end
   end
 
-  version "omqctl-v0.8.5"
+  version "omqctl-v0.8.6"
 
   on_macos do
     on_arm do
-      sha256 "64f5563bcbc10094a5be2d13f80a5fda5c1a54867915542fb5dee7917681f44e"
+      sha256 "30fa97b37f5c87f527bffa07dc691d87c97e85ec27d2a9002dd2acb8bb6aeef7"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c408d4f97993467a0e7643938c4f61bc41569bb29d6e67c08b656ec4acb0edea"
+      sha256 "3140cb5960b0569800d84fd30d516d3ea9d95beb5fbea55c6227e14cd9cb8cea"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "15f361ccb53e81c85e29c7fb0f1e21af942fc803561acefbea36a4264c398004"
+      sha256 "28f1f81aef9c283f41125d6c4f86744522895415bf05b313240239776946ea8a"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a1adb82c2f406322fc1afee8af10bad01768255d62c7aefc738c32d4e9dfc68f"
+      sha256 "08379511984657e2cb0c4d34fbdbf1738059b24c33972ffd59c654a8d597a1f1"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_x86_64.tar.gz"
     end
   end
@@ -79,7 +79,7 @@ cask "omqctl" do
   manpage "man/omqctl-version.1.gz"
   manpage "man/omqctl.1.gz"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     The omqctl tool is used to control the OctopusMQ deployments.
