@@ -17,19 +17,19 @@ omqctl replica destroy <ordinal> [flags]
 ### Options
 
 ```
-  -h, --help               help for destroy
-      --timeout duration   Time allowed for the command, including --wait (default 10m0s)
-      --wait               Wait until the replica is back in the cluster and caught up
-  -y, --yes                Do not ask for confirmation
+  -h, --help[=true|false]   help for destroy
+      --timeout duration    Time allowed for the command, including --wait (default 10m0s)
+      --wait[=true|false]   Wait until the replica is back in the cluster and caught up
+  -y, --yes[=true|false]    Do not ask for confirmation
 ```
 
 ### Options inherited from parent commands
 
 ```
-      --context string   Context to use for the command (uses the active context if not specified)
-      --no-color         Disable colored output (also disabled by the NO_COLOR environment variable or when output is not a terminal)
-  -o, --output string    Output format: console, json (default "console")
-  -v, --verbosity int8   Log verbosity level: 0=fatal, 1=panic, 2=dpanic, 3=error, 4=warn, 5=info, 6=debug (default 5)
+      --context string          Context to use for the command (uses the active context if not specified)
+      --no-color[=true|false]   Disable colored output (also disabled by the NO_COLOR environment variable or when output is not a terminal)
+  -o, --output string           Output format: console, json (default "console")
+  -v, --verbosity int8          Log verbosity level: 0=fatal, 1=panic, 2=dpanic, 3=error, 4=warn, 5=info, 6=debug (default 5)
 ```
 
 ### SEE ALSO
