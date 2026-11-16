@@ -8,25 +8,25 @@ cask "omqctl" do
     end
   end
 
-  version "omqctl-v0.8.7"
+  version "omqctl-v0.8.8"
 
   on_macos do
     on_arm do
-      sha256 "3c74efd1815f5dd512cef587052defa97ff5512c600ea2bd0d2a273e41df67ac"
+      sha256 "6dd45919853fa33f92afcdd67c8535c245a6f0ada71c4a66cd062cd4e43b6cf3"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "93841bf112d0f6aa59f16eeb941fd4c44d3a28327b00fc2b6d25d93d53d91577"
+      sha256 "5021684a6a95bb4d6a61dcc996cd3a08221fdadbf361331473718f74e30484f1"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "66ae8515c74e3b51d6b44ebebdf6ecde9586303cadeef311a3cd06600a4c4029"
+      sha256 "cdd31bd5eef2f68531c65647f4352230209705ca52d0005d322583266396f075"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a32886fde59d9bb9cd618155f6a1fdad45d1b3f6935cd33b2bd246a57af11866"
+      sha256 "4d9e061c6fd91f95d824d20ad10e985cfb33b615e686f447d7f33d13f4800c8d"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/omqctl_Linux_x86_64.tar.gz"
     end
   end
