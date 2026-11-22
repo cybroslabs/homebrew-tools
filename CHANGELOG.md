@@ -2,6 +2,10 @@
 
 All notable changes to ouroctl will be documented in this file.
 
+## [v0.0.16] - 2026-11-22
+
+Released version v0.0.16 of openxml-embedded-extractor.
+
 ## [v2.15.13] - 2026-11-20
 
 Released version v2.15.13 of ouroctl.
