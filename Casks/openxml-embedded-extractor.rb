@@ -8,25 +8,25 @@ cask "openxml-embedded-extractor" do
     end
   end
 
-  version "openxml-embedded-extractor-v0.0.15"
+  version "openxml-embedded-extractor-v0.0.16"
 
   on_macos do
     on_arm do
-      sha256 "abb2be24804f8bf22cd74e70b0c87988c6f0c8b2e22df80c275abf8a9dec6e0c"
+      sha256 "d1d13dbcdf9b376a2d88b8caafb6afb56a7dea3cb1bd6885f90fb698cb44fdc8"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0efea278ba32e81f035c0b56afca26cbc88221bdf2a29229a71be7bcb4676e7c"
+      sha256 "192dd86240c5a5b09f366bf1d547bb9569188fd1f0bc3428f23a797947a2aa85"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "2ef1ff62658220a50903c7baf4c341127297154ac3cefb21be5fa230a274075d"
+      sha256 "f62f934a0eb282a6fef62fd49554bd1b02198a04464a87d2dac0a208e08aef37"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c79a7ae69981f1e923eb4b96a64e654b0fcfaaa62f5e1211f5b0c3992a508d30"
+      sha256 "10fef381736b28c80c6d08d6aff828809a67fb6ba3dc206b2fdbf72f54c2f9dc"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/openxml-embedded-extractor_Linux_x86_64.tar.gz"
     end
   end
@@ -43,7 +43,7 @@ cask "openxml-embedded-extractor" do
   manpage "man/openxml-embedded-extractor-version.1.gz"
   manpage "man/openxml-embedded-extractor.1.gz"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     The openxml-embedded-extractor tool extracts embedded files from OpenXML documents (docx, xlsx, pptx).
