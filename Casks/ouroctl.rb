@@ -8,25 +8,25 @@ cask "ouroctl" do
     end
   end
 
-  version "ouroctl-v2.17.0"
+  version "ouroctl-v2.18.0"
 
   on_macos do
     on_arm do
-      sha256 "d01202cc312d5c258bd188c4336ec7887ce5981ee7a2cc94d88bb36d4db5fbef"
+      sha256 "a8459601c895850e2d6b0c358922590184ff78a0cb8436cc1ea18f097856dc08"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "62aa986a34f8d4fe3f0f57235dc03c3bcb2ea212c2f6883936041b411e2d5a51"
+      sha256 "3ad321bb20d6a02657c457087f22c30301d3af37f4cf044b49b0e7ead689f7f7"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b8354760d75b4ccbd69817d358624095bde437b7fc84b5e1b1a8c8e4eab299d0"
+      sha256 "c0f09417a8295a4385e09e55e0202a2b1d2f91c2db0171ae16a5a03b7cc0e92a"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ea13dc57d3c6d88e986cd5bf441361775669897b679428446d885e421e1e4398"
+      sha256 "acf67167bcf452abf70a2e3fab0f12735ad842254a6378fb740a511e0cc104df"
       url "https://github.com/cybroslabs/homebrew-tools/releases/download/#{version}/ouroctl_Linux_x86_64.tar.gz"
     end
   end
@@ -40,6 +40,7 @@ cask "ouroctl" do
   end
 
   binary "ouroctl"
+  manpage "man/ouroctl-apply-basemap.1.gz"
   manpage "man/ouroctl-apply-business-object-component-types.1.gz"
   manpage "man/ouroctl-apply-business-object-components.1.gz"
   manpage "man/ouroctl-apply-business-object-types.1.gz"
@@ -59,6 +60,7 @@ cask "ouroctl" do
   manpage "man/ouroctl-apply.1.gz"
   manpage "man/ouroctl-delete-template.1.gz"
   manpage "man/ouroctl-delete.1.gz"
+  manpage "man/ouroctl-get-basemap.1.gz"
   manpage "man/ouroctl-get-business-object-component-types.1.gz"
   manpage "man/ouroctl-get-business-object-components.1.gz"
   manpage "man/ouroctl-get-business-object-types.1.gz"
