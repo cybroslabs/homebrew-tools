@@ -40,6 +40,7 @@ The 'get' commands allow you to retrieve templates for various components and ot
 * [ouroctl get environment](ouroctl_get_environment.md)	 - Export the device configuration of the environment to YAML
 * [ouroctl get field-descriptors](ouroctl_get_field-descriptors.md)	 - Retrieve only user defined field descriptors
 * [ouroctl get license-code](ouroctl_get_license-code.md)	 - Retrieve a license request code for the current system
+* [ouroctl get locations](ouroctl_get_locations.md)	 - Retrieve object locations
 * [ouroctl get node-template](ouroctl_get_node-template.md)	 - Retrieve a template for nodes (communication units and devices)
 * [ouroctl get register-template](ouroctl_get_register-template.md)	 - Retrieve a template for registers
 * [ouroctl get roles](ouroctl_get_roles.md)	 - Retrieve roles
