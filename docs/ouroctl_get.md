@@ -25,6 +25,7 @@ The 'get' commands allow you to retrieve templates for various components and ot
 ### SEE ALSO
 
 * [ouroctl](ouroctl.md)	 - Command-line tool for OuroPlatform deployments
+* [ouroctl get basemap](ouroctl_get_basemap.md)	 - Show the basemap in use
 * [ouroctl get business-object-component-types](ouroctl_get_business-object-component-types.md)	 - Retrieve business object component types
 * [ouroctl get business-object-components](ouroctl_get_business-object-components.md)	 - Retrieve business object components
 * [ouroctl get business-object-types](ouroctl_get_business-object-types.md)	 - Retrieve business object types

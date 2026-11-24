@@ -23,6 +23,7 @@ Apply Excel templates, GULF data, secrets, translations, licenses, field descrip
 ### SEE ALSO
 
 * [ouroctl](ouroctl.md)	 - Command-line tool for OuroPlatform deployments
+* [ouroctl apply basemap](ouroctl_apply_basemap.md)	 - Upload an export of the vector tile server as the basemap
 * [ouroctl apply business-object-component-types](ouroctl_apply_business-object-component-types.md)	 - Apply business object component types from JSON file
 * [ouroctl apply business-object-components](ouroctl_apply_business-object-components.md)	 - Apply business object components from JSON file
 * [ouroctl apply business-object-types](ouroctl_apply_business-object-types.md)	 - Apply business object types from JSON file
