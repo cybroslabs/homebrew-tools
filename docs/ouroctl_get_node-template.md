@@ -36,8 +36,10 @@ ouroctl get node-template [flags]
 ```
   -a, --app-protocol string                    Application protocol of the driver
   -c, --communication-unit-only[=true|false]   Whether the template is for a communication unit only
+  -z, --data[=true|false]                      Fill the template with data from the system
   -e, --device-only[=true|false]               Whether the template is for a device only
   -d, --driver-type string                     Type of the driver to create a template
+  -f, --file string                            Path of the Excel file to write [<device|communication-unit|device-cu>-<driver-type>-lt-<link-type>-lp-<link-protocol>-ap-<app-protocol>.xlsx]
   -h, --help[=true|false]                      help for node-template
   -l, --link-protocol string                   Link protocol of the driver
   -t, --link-type string                       Link type of the driver
@@ -47,8 +49,6 @@ ouroctl get node-template [flags]
 
 ```
       --context string          Context to use for the command (uses active context if not specified)
-  -z, --data[=true|false]       fill the template with data from the system
-  -f, --file string             Path with file name to storing the template Excel file [/home/user/templates/<TEMPLATE_TYPE>_template.xlsx]
       --no-color[=true|false]   Disable colored output (also disabled by the NO_COLOR environment variable or when output is not a terminal)
   -v, --verbosity int8          Log verbosity level: 0=fatal, 1=panic, 2=dpanic, 3=error, 4=warn, 5=info, 6=debug (default 5)
 ```

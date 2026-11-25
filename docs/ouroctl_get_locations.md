@@ -25,6 +25,7 @@ ouroctl get locations [flags]
 ### Options
 
 ```
+  -f, --file string           Path of the JSON file to write [locations.json]
   -h, --help[=true|false]     help for locations
   -o, --object-type strings   Export only these object types: DEVICE, COMMUNICATION_UNIT, BUSINESS_OBJECT (repeatable or comma-separated; default all)
 ```
@@ -33,8 +34,6 @@ ouroctl get locations [flags]
 
 ```
       --context string          Context to use for the command (uses active context if not specified)
-  -z, --data[=true|false]       fill the template with data from the system
-  -f, --file string             Path with file name to storing the template Excel file [/home/user/templates/<TEMPLATE_TYPE>_template.xlsx]
       --no-color[=true|false]   Disable colored output (also disabled by the NO_COLOR environment variable or when output is not a terminal)
   -v, --verbosity int8          Log verbosity level: 0=fatal, 1=panic, 2=dpanic, 3=error, 4=warn, 5=info, 6=debug (default 5)
 ```

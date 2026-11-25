@@ -9,8 +9,6 @@ The 'get' commands allow you to retrieve templates for various components and ot
 ### Options
 
 ```
-  -z, --data[=true|false]   fill the template with data from the system
-  -f, --file string         Path with file name to storing the template Excel file [/home/user/templates/<TEMPLATE_TYPE>_template.xlsx]
   -h, --help[=true|false]   help for get
 ```
 
