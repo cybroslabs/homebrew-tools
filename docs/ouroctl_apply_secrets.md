@@ -17,18 +17,14 @@ ouroctl apply secrets [flags]
 ```
   # Apply secrets for DLMS driver
   ouroctl apply secrets --file units.json --driver-type CYBROSLABS_DLMS_LN
-
-  # Apply with optional decryption secret
-  ouroctl apply secrets --file units.json --driver-type CYBROSLABS_DLMS_LN --decryption-secret-id secret_id
 ```
 
 ### Options
 
 ```
-  -s, --decryption-secret-id string   ID of the data decryption secret to use
-  -d, --driver-type string            Type of the driver to which the secrets will be applied
-  -f, --file string                   Path to the secrets file to apply
-  -h, --help[=true|false]             help for secrets
+  -d, --driver-type string   Type of the driver to which the secrets will be applied
+  -f, --file string          Path to the secrets file to apply
+  -h, --help[=true|false]    help for secrets
 ```
 
 ### Options inherited from parent commands
