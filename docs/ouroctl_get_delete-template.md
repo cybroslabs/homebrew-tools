@@ -30,7 +30,7 @@ ouroctl get delete-template [flags]
 ```
   -f, --file string          Path of the Excel file to write [DeleteTemplate<OBJECT_TYPE>.xlsx]
   -h, --help[=true|false]    help for delete-template
-  -o, --object-type string   Type of the object to create a template for deleting
+  -o, --object-type string   Type of the objects to delete: COMMUNICATION_UNIT, DEVICE, DEVICE_CONFIGURATION_REGISTER, DEVICE_CONFIGURATION_TEMPLATE, DEVICE_GROUP, VARIABLE
 ```
 
 ### Options inherited from parent commands

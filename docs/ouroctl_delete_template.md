@@ -28,7 +28,7 @@ ouroctl delete template [flags]
 ```
   -f, --file string          Path to Excel template file containing objects to delete
   -h, --help[=true|false]    help for template
-  -o, --object-type string   Object type (DEVICE, DEVICE_GROUP, COMMUNICATION_UNIT, etc.)
+  -o, --object-type string   Type of the objects to delete: COMMUNICATION_UNIT, DEVICE, DEVICE_CONFIGURATION_REGISTER, DEVICE_CONFIGURATION_TEMPLATE, DEVICE_GROUP, VARIABLE
 ```
 
 ### Options inherited from parent commands
