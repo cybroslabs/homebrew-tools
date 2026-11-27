@@ -39,7 +39,7 @@ ouroctl get node-template [flags]
   -z, --data[=true|false]                      Fill the template with data from the system
   -e, --device-only[=true|false]               Whether the template is for a device only
   -d, --driver-type string                     Type of the driver to create a template
-  -f, --file string                            Path of the Excel file to write [<device|communication-unit|device-cu>-<driver-type>-lt-<link-type>-lp-<link-protocol>-ap-<app-protocol>.xlsx]
+  -f, --file string                            Path of the Excel file to write [<device|communication-unit|device-cu>-<driver-type>-lt-<link-type>-lp-<link-protocol>-ap-<app-protocol>-<driver-version>.xlsx]
   -h, --help[=true|false]                      help for node-template
   -l, --link-protocol string                   Link protocol of the driver
   -t, --link-type string                       Link type of the driver
